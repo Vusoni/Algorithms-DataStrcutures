@@ -12,7 +12,7 @@ function naiveSearch(long, short) {
     for(var j = 0; j < short.length; j++) { // Nested Loop
 
       // Check if the short string is not equal of long i+j, then break
-      if(short[j] !== long[i+j]) break // the j will reset here but i will stay
+      if(short[j] !== long[i+j]) break 
       if(j === short.length - 1) count++; // Found a match 
       
     }

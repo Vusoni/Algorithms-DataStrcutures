@@ -7,7 +7,6 @@
 function binarySearch(arr, val) {
   let start = 0
   let end = arr.length -1
-  // Calculate middle point and round up using "Math.floor"
   let middle = Math.floor((start + end) / 2)
 
   // While middle is wrong

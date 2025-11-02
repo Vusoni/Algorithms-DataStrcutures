@@ -9,4 +9,4 @@ function linearSearch(arr, val) {
   return -1
 }
 
-linearSearch([34, 12, 1, 64, 2], 1) // It should return index 2 looking for val (1)
+linearSearch([34, 12, 1, 64, 2], 1) 

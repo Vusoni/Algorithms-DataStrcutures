@@ -80,7 +80,7 @@ class BinarySearchTree {
 
         while(queue.length){
            node = queue.shift();
-           data.push(node.value); // Add to list to return - Value to make it more readable
+           data.push(node.value);
            if(node.left) queue.push(node.left); 
            if(node.right) queue.push(node.right); 
         }
@@ -97,7 +97,7 @@ class BinarySearchTree {
         if(node.right) traverse(node.right)
       }
       traverse(this.root) // Store the node
-      return node // Order to visit the nodes 
+      return node 
     }
 
     // Depth First PostOrder”
@@ -106,10 +106,22 @@ class BinarySearchTree {
       function traverse(node){
         if(node.left) traverse(node.left)
         if(node.right) traverse(node.right)
-        data.push(node); // This only change to store last instead of first
+        data.push(node); 
       }
       traverse(this.root) // Store the node
-      return node // Order to visit the nodes 
+      return node 
+    }
+
+    // Depth First InOrder”
+    DFSInOrder(){
+      var data = []
+      function traverse(node){
+        node.left && traverse(node.left)
+        data.push(node.value)
+        node.right && traverse(node.right)
+      }
+      traverse(this.root)
+      return data
     }
 }
 

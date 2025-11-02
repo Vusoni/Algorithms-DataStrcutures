@@ -14,7 +14,7 @@ function bubbleSort(arr) {
   
   for (let i = arr.length; i > 0; i--) {
     for (let j = 0; j < 1 - 1; j++){
-      if (arr[j] > arr[j + 1]) { // Swapping Calculation
+      if (arr[j] > arr[j + 1]) { // Calculate Swapping
         swap(arr, j, j + 1)
       }
     }
